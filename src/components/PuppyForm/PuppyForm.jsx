@@ -14,7 +14,7 @@ export default function PuppyForm() {
 
   // TODO: Use the `addPuppy` mutation to add a puppy when the form is submitted
 
-    const postPuppy = async (event) => {
+  const postPuppy = async (event) => {
     event.preventDefault();
 
     // Placeholder image w/ random photos of dogs
@@ -30,28 +30,33 @@ export default function PuppyForm() {
 
   return (
     <>
-      <h2>Add a Puppy</h2>
-      <form onSubmit={postPuppy}>
-        <label>
-          Name
-          <input
-            name="puppyName"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-          />
-        </label>
-        <label>
-          Breed
-          <input
-            name="breed"
-            value={breed}
-            onChange={(e) => setBreed(e.target.value)}
-          />
-        </label>
-        <button>Add to Roster</button>
-        {isLoading && <output>Uploading puppy information...</output>}
-        {error && <output>{error.message}</output>}
-      </form>
+      <div className="pfcontainer">
+        <h2 className="pfh2">Add a Puppy</h2>
+        <form className="pform" onSubmit={postPuppy}>
+          <label className="pflabel">
+            Name:
+            <input
+              className="pfinput"
+              name="puppyName"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
+          </label>
+          <label className="pflabel">
+            Breed:
+            <input
+              className="pfinput"
+              name="breed"
+              value={breed}
+              onChange={(e) => setBreed(e.target.value)}
+            />
+          </label>
+          <br />
+          <button className="pfbutton">Add to Roster</button>
+          {isLoading && <output>Uploading puppy information...</output>}
+          {error && <output>{error.message}</output>}
+        </form>
+      </div>
     </>
   );
 }

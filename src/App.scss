@@ -2,22 +2,13 @@
   padding: 1rem;
   display: flex;
   flex-direction: column;
-  height: 100vh;
-}
-
-form {
-  display: flex;
-  gap: 1ch;
-}
-
-aside {
-  display: flex;
-  flex-direction: column;
-  gap: 1ch;
+  background-color: black;
+  color: yellow;
+  text-align: center;
 }
 
 main {
-  flex: 1;
+  flex: 0;
   display: grid;
   grid-template-columns: 3fr 1fr;
   gap: 1rem;
@@ -32,11 +23,11 @@ article {
   list-style: none;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1rem;
+  gap: 2rem;
 
   li {
     display: flex;
-    flex-flow:column;
+    flex-flow: column;
     gap: 2ch;
 
     figure {
@@ -46,5 +37,149 @@ article {
   }
 }
 
+//PuppyForm CSS
+html {
+  background-color: black;
+}
 
+.pfcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 150px;
+}
 
+.pfh2 {
+  font-weight: bolder;
+  text-decoration: underline;
+  margin: 5px;
+  padding: 10px;
+  color: yellow;
+}
+
+.pform {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 35%;
+}
+
+.pflabel {
+  font-size: 16px;
+  font-weight: bold;
+  color: yellow;
+  text-align: left;
+}
+
+.pfinput {
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid yellow;
+  border-radius: 4px;
+  outline: none;
+  width: 100%;
+}
+
+.pfbutton {
+  padding: 12px 20px;
+  font-size: 18px;
+  color: black;
+  background-color: yellow;
+  border: solid;
+}
+
+.pfbutton:hover {
+  background-color: black;
+  color: yellow;
+  border-radius: 4px;
+}
+
+//PuppyDetails CSS
+.rbutton {
+  padding: 12px 20px;
+  font-size: 18px;
+  color: black;
+  background-color: yellow;
+  border: solid;
+}
+
+.rbutton:hover {
+  background-color: black;
+  color: yellow;
+  border-radius: 4px;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+//PuppyList CSS
+.searchbar {
+}
+
+.searchform {
+  display: contents;
+  flex-direction: row;
+  gap: 10px;
+  width: 35%;
+}
+
+.searchbutton {
+  color: black;
+  background-color: yellow;
+}
+
+.plheader {
+  margin: 30px;
+  text-decoration: underline;
+}
+
+.outline {
+  border: 1px solid yellow;
+}
+
+.detailbutton {
+  padding: 5px;
+  font-size: 18px;
+  color: black;
+  background-color: yellow;
+  border: solid;
+}
+
+.detailbutton:hover {
+  background-color: black;
+  color: yellow;
+  border-radius: 4px;
+}
+
+//Navigation CSS
+.navbar {
+  flex-direction: row-reverse;
+  margin: 2px;
+}
+
+.navlist {
+  list-style-type: none;
+  display: flex;
+  margin: 5px;
+}
+
+.btn-primary {
+  color: black;
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: yellow;
+  border-radius: 5px;
+  flex-direction: column;
+  margin: 10px 20px;
+}
+
+.btn-primary:hover {
+  color: yellow;
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: black;
+  border: 1px solid yellow;
+}
