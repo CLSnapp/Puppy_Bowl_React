@@ -57,16 +57,17 @@ export default function PuppyDetails({ selectedPuppyId, setSelectedPuppyId }) {
         <p>{puppy.breed}</p>
         <p>Team {puppy.team?.name ?? "Unassigned"}</p>
         <div>
-          <button
-            className="rbutton"
-            onClick={() => removePuppy(puppy.id)}
-          >
-            Remove From Roster 
+          <button className="rbutton" onClick={() => removePuppy(puppy.id)}>
+            Remove From Roster
           </button>
         </div>
 
         <figure>
-          <img src={puppy.imageUrl} alt={puppy.name} />
+          <img
+            className="puppyimgdetails"
+            src={puppy.imageUrl}
+            alt={puppy.name}
+          />
         </figure>
       </>
     );

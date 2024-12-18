@@ -23,7 +23,7 @@ article {
   list-style: none;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 2rem;
+  gap: 0.5rem;
 
   li {
     display: flex;
@@ -115,10 +115,11 @@ aside {
   gap: 15px;
 }
 
-//PuppyList CSS
-.searchbar {
+.puppyimgdetails {
+  width: 385px;
 }
 
+//PuppyList CSS
 .searchform {
   display: contents;
   flex-direction: row;

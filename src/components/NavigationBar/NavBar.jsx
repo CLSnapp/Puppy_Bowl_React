@@ -7,12 +7,12 @@ export default function NavBar() {
       <ul className="navlist">
         <li>
           <Link className="btn-primary" to="/players">
-            Puppy Form
+            Add a Puppy
           </Link>
         </li>
         <li>
           <Link className="btn-primary" to="/">
-            Puppy List
+            Home
           </Link>
         </li>
       </ul>

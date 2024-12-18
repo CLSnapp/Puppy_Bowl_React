@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { useGetPuppiesQuery } from "./PuppyListSlice";
 import { useNavigate } from "react-router-dom";
 
-
 /**
  * @component
  * Shows a list of puppies in the roster.
